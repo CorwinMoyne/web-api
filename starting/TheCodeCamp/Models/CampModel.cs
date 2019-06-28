@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TheCodeCamp.Data;
 
 namespace TheCodeCamp.Models
 {
@@ -12,6 +13,8 @@ namespace TheCodeCamp.Models
         public string Moniker { get; set; }
         public DateTime EventDate { get; set; } = DateTime.MinValue;
         public int Length { get; set; } = 1;
+
+        public TalkModel Talk { get; set; }
 
         // Include location info
         public string Venue { get; set; }
